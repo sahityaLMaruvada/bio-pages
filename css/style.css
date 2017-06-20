@@ -1,0 +1,27 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+body{margin-top:20px;}
+.fa-fw {width: 2em;}
+.menu-items{
+	padding:30px 0 30px 0 !important;
+	background: #ffd520;
+	font-family: 'Verdana';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+.img-background{
+	background:#3a4750;
+}
+.contact{
+	background: #d3d6db;
+	font-family: 'Verdana-Italic', 'Verdana Italic', 'Verdana';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    padding:120px 0 120px 0;
+    text-align: center;
+
+}
