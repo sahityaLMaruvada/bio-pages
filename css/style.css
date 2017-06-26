@@ -57,15 +57,22 @@ body{margin-top:20px;}
     border:1px solid #ffd200;
 }
 
+
+
 @media only screen and (max-width:768px){
-    .img-background, .contact{
+    .img-background, .contact, .home-icon{
         display: none;
+    }
+
+    .dark-background{
+        background: black;
+        color: white;
     }
 
 }
 
 @media only screen and (min-width:769px){
-    .img-mobile{
+    .img-mobile, .dark-background{
         display: none;
     }
 
