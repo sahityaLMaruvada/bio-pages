@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <title>Bootstrap Example</title>
+	  <title>Home</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,11 +11,19 @@
 	  <script src="js/main.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container-fluid">
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+   			</div>  
 		    <div class="row">
-		        <div class="col-lg-3 col-md-3 col-sm-3">
-		        	<div class="img-background" style="padding: 20px">
-		        		<img src="assets/u15.png" class="img-circle center-block">
+		        <div class="col-lg-3 col-md-3 col-sm-3 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		        	<div class="img-background">
+		        		<img src="assets/u15.png" class="img-circle img-responsive center-block">
 		        	</div>
 		            <ul class="nav nav-pills nav-stacked admin-menu">
 		                <li><a class="active menu-items" data-target-id="Bio"><i class="fa fa-home fa-fw"></i>Bio</a></li>
@@ -26,24 +34,29 @@
 		            </ul>
 		            <div class="contact">Contact Info</div>
 		        </div>
-		        <div class="col-lg-9 col-md-9 col-sm-9" style="text-align: right;"><a href="#Bio"><i class="fa fa-home fa-4x"></i></a></div>
-		        <div class="col-lg-9 col-md-9 col-sm-9 well admin-content" id="Bio" style="margin-top: 100px;">
-		            <h1 style="font-style: italic;">Name</h1>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-		        </div>
-		        <div class="col-lg-9 col-md-9 col-sm-9 well admin-content" id="Tab1">
-		        	<h1 style="font-style: italic;">Tab1</h1>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-		        </div>
-		        <div class="col-lg-9 col-md-9 col-sm-9 well admin-content" id="Tab2">
-		            <h1 style="font-style: italic;">Calendar</h1>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-		        </div>
-		        <div class="col-lg-9 col-md-9 col-sm-9 well admin-content" id="Publications">
-		            <h1 style="font-style: italic;">Publications</h1>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-		        </div>
-		   
+		        <div class="body-background col-lg-9 col-md-9 col-sm-9 col-xs-12">
+		        	<div class="img-mobile">
+		        		<img src="assets/u52_a.png" class="img-responsive center-block">
+		        	</div>
+			        <div style="text-align: right;"><a href="#Bio"><i class="fa fa-home fa-4x"></i></a></div>
+			        <div class="admin-content" id="Bio">
+			            <h1 style="font-style: italic;">Name</h1>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+			        </div>
+			        <div class="admin-content" id="Tab1">
+			        	<h1 style="font-style: italic;">Tab1</h1>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+			        </div>
+			        <div class="admin-content" id="Tab2">
+			            <h1 style="font-style: italic;">Calendar</h1>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+			        </div>
+			        <div class="admin-content" id="Publications">
+			            <h1 style="font-style: italic;">Publications</h1>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+			        </div>
+			    </div>
+			</div>
 		</div>
 	</body>
 </html>
