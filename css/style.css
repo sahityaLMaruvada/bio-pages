@@ -25,8 +25,8 @@ body{margin-top:20px;}
     border:1 px solid #f5f5f5;
 }
 
-.img-background{
-	background:#3a4750;
+.img-background, .img-background a:hover, .img-background a:focus{
+	background:#3a4750 !important;
 }
 body{
     background-color: #f5f5f5;
