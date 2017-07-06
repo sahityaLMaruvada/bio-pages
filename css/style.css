@@ -6,29 +6,27 @@ body{margin-top:20px;}
     margin-right:auto;
     margin-left:auto
  }
-.col-sm-9{
-    width: 65% !important
-}
- .nav-pills li a:active,  .nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover{
+
+.nav-pills li a:active,  .nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover{
     background-color: #e03a3e
  }
 .fa-fw {width: 2em;}
 .menu-items{
-	padding:30px 0 30px 0 !important;
-	background: #ffd520;
-	font-family: 'Verdana';
+    padding:30px 0 30px 30px !important;
+    background: #ffd520;
+    font-family: 'Verdana';
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
-    text-align: center;
+    text-align: left;
     border:1 px solid #f5f5f5;
 }
 
-.img-background, .img-background a:hover, .img-background a:focus{
+.img-background, .img-background a:hover, .img-background a:focus, .img-background .active, .img-background a:visited, .nav-pills li.img-background a{
 	background:#3a4750 !important;
 }
-body{
+.body-background{
     background-color: #f5f5f5;
 }
 .contact{
@@ -36,8 +34,8 @@ body{
 	font-family:  'Verdana';
     font-weight: 400;
     font-size: 14px;
-    padding:30px 10px 50px 10px;
-    text-align: center;
+    padding:30px 10px 50px 30px;
+    text-align: left;
 
 }
 .navbar-toggle
@@ -61,14 +59,19 @@ body{
     border-radius:1px;
     border:1px solid #ffd200;
 }
+.desktop-banner{
+    background:#383746; 
+    color:white;
+}
+
 
 
 
 @media only screen and (max-width:768px){
     .img-background, .contact, .home-icon{
-        display: none;
+        display: none !important;
     }
-
+    .
     .dark-background{
         background: black;
         color: white;
@@ -89,11 +92,16 @@ body{
      bottom: 0px;
      z-index: 1;
     }
-
+    .menu-items{
+        text-align: center
+    }
+    .desktop-banner{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:769px){
-    .img-mobile, .dark-background{
+    .img-mobile, .dark-background, .mobile-view{
         display: none;
     }
       .adjust-margin{
@@ -101,6 +109,14 @@ body{
         margin-top: -32px;
     }
 
+    .adjust-body-margin{
+      margin-top:-20px;
+    }
 }
 
 
+@media only screen and (min-width:768px) and (max-width: 1200px ){
+.col-sm-9{
+    width: 64% 
+}
+}
